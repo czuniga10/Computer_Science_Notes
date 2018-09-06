@@ -9,8 +9,9 @@
 public class Remote {
    //field
    private boolean on;
-   private int channel;
    private final int MAX_CHANNEL = 4;
+   private final int MIN_CHANNEL = 1;
+   private int channel = MIN_CHANNEL;
    
    
    //constructor
@@ -28,7 +29,7 @@ public class Remote {
    public void channelUp() {
       channel += 1;
       if (channel > MAX_CHANNEL) {
-         channel = 0;
+         channel = MIN_CHANNEL;
       }
    }
 
