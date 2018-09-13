@@ -21,5 +21,10 @@ public class RemoteApp {
       myRemote.channelUp();
       myRemote.channelUp();
       myRemote.channelUp();
+      
+      //Print values of on and channel
+      System.out.printf("on: %b  channel: %d%n",
+         myRemote.getOn(), myRemote.getChannel() );
+
    }
 }

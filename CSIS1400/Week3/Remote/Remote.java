@@ -8,7 +8,7 @@
 
 public class Remote {
    //field
-   private boolean on;
+   private boolean on; // true if remote is on
    private final int MAX_CHANNEL = 4;
    private final int MIN_CHANNEL = 1;
    private int channel = MIN_CHANNEL;
@@ -17,6 +17,14 @@ public class Remote {
    //constructor
    
    //methods
+   public boolean getOn() {
+      return on;
+   }
+   
+   public int getChannel() {
+      return channel;
+   }
+   
    public void onOff() {
       if (on == false) {
          on = true;
