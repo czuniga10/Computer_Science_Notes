@@ -18,3 +18,10 @@ ex:
 public void setX(int x) {
     this.x = x;
 }
+
+
+
+
+##A parameter is a method input specified in a method definition. Ex: A pizza area method might have diameter as an input.
+
+##-An argument is a value provided to a method's parameter during a method call. Ex: A pizza area method might be called as printPizzaArea(12.0) or as printPizzaArea(16.0).
